@@ -1,0 +1,9 @@
+{
+  "name": "Social-network",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.11.0",
+    "jade": "^1.9.0",
+    "mongoose": "^3.8.21"
+  }
+}
