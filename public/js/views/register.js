@@ -1,4 +1,4 @@
-define(['text!templates/register.html'], function (registerTemplate){
+define(['templates/register.html'], function (registerTemplate){
 	var registerView = Backbone.View.extend({
 		el : $('#content'),
 

@@ -4,7 +4,7 @@ define(['./views/index', './views/register', './views/login', './views/forgotpas
 		currentView = null,
 		
 		routes : {
-			"index" : "index",
+			"" : "index",
 			"login" : "login",
 			"register" : "register",
 			"forgotpassword" : "forgotpassword"
@@ -21,6 +21,7 @@ define(['./views/index', './views/register', './views/login', './views/forgotpas
 		},
 
 		index : function (){
+			console.log('estoy en el index');
 			this.changeView(new IndexView());
 		},
 
@@ -33,9 +34,11 @@ define(['./views/index', './views/register', './views/login', './views/forgotpas
 		},
 
 		register : function (){
-			this.changeView(new RegisterView());
+			console.log('estoy en el registro');
+			// this.changeView(new RegisterView());	
 		}
 	});
 
-	return new SocialRouter();
+	var Social = new SocialRouter;
+	Backbone.history.start();
 });
