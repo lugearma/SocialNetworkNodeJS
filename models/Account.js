@@ -67,7 +67,7 @@ var AccountConfig = function (config, mongoose, nodemailer) {
 	};
 
 	var forgotPassword = function (email, resetPasswordURL, callback){
-		var user = Account.findOne({ 
+		var user = 	Account.findOne({ 
 						email : email 
 					}, 
 					function (err, doc){
